@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /images/
+Disallow: /fonts/
+Disallow: /css/
+Disallow: /js/
+Disallow: /storage/
+Disallow: /*.jpg
+Disallow: /*.jpeg
+Disallow: /*.png
+Disallow: /*.gif
+Disallow: /*.tif
+Disallow: /*.tiff
+Disallow: /*.svg
+Disallow: /*.js
+Disallow: /*.css
+
+Sitemap: http://www.thuringer-tuning-freunde.de/sitemap.xml

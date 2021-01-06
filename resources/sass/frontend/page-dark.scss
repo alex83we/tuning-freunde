@@ -1,0 +1,231 @@
+$orange: #ff4400;
+$color: #aaa;
+$backgroundColor: #272B30;
+$backgroundColor1: #3A3F44;
+$backgroundColor2: #515960;
+$borderColor: lighten($backgroundColor, 15%);
+$borderColor1: lighten($backgroundColor1, 15%);
+$borderColor2: lighten($backgroundColor2, 15%);
+$darkOrange: darken($orange, 15%);
+$lightOrange: lighten($orange, 5%);
+
+[data-theme="dark"] {
+    font-family: "Open Sans", sans-serif;
+    color: $color;
+    background-color: $backgroundColor;
+
+    .bg-white, #header, .team .member, .team .members {
+        background-color: $backgroundColor1 !important;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+        color: #fff;
+        border-color: $borderColor1;
+        background-color: $backgroundColor2;
+    }
+
+    .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+        background-color: #fff;
+        -webkit-transform: translateX(0.75rem);
+        transform: translateX(0.75rem);
+    }
+
+    .navbar-light {
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.5);
+
+            &:hover, &:focus {
+                color: $lightOrange !important;
+            }
+
+            &.active, &.show {
+                color: $orange;
+            }
+        }
+
+        .navbar-toggler {
+            color: rgba(255, 255, 255, 0.5) !important;
+            border-color: rgba(214, 215, 216, 0.1) !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+
+
+    .dropdown-menu {
+        color: $color !important;
+        background-color: $backgroundColor1 !important;
+    }
+
+    .dropdown-item {
+        color: $color;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            background-color: $backgroundColor;
+        }
+
+        &.active,
+        &:active {
+            color: #fff;
+            text-decoration: none ;
+            background-color: $backgroundColor;
+        }
+    }
+
+    #hero p {
+        color: $backgroundColor !important;
+    }
+
+    .icon-box {
+        background: $backgroundColor1 !important;
+    }
+
+    .featured .icon-box h3 a, .services .icon-box h4 a, .featured .icon-box p, .services .icon-box p {
+        color: $color;
+    }
+
+    .featured .icon-box:hover {
+        background: $orange !important;
+
+        i, h3 a, p {
+            color: #fff !important;
+        }
+    }
+
+    .services .icon-box:hover {
+        background: $orange !important;
+        border-color: $borderColor !important;
+
+        h4 a, p {
+            color: #fff !important;
+        }
+    }
+
+    .breadcrumbs {
+        background-color: $backgroundColor2;
+        border-bottom: 1px solid $borderColor2;
+
+        h2 {
+            color: white !important;
+        }
+    }
+
+    .counts {
+        .count-box {
+            box-shadow: -10px 0px 20px 0 rgba(214, 215, 216, 0.1);
+        }
+    }
+
+    .team .member, .team .members {
+        box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+    }
+
+    .portfolio {
+        #portfolio-flters {
+            background-color: $backgroundColor;
+
+            li {
+                background-color: $backgroundColor1 !important;
+                color: $color !important;
+
+                &.filter-active {
+                    color: #FFF !important;
+                    background-color: $orange !important;
+                }
+            }
+        }
+
+        .img-thumbnail {
+            background-color: $backgroundColor1;
+            color: $color;
+            border-color: $borderColor1;
+        }
+    }
+
+    .links {
+        .page-item {
+
+            .page-link {
+                border: 1px solid $color;
+                color: $color;
+                background-color: $backgroundColor1;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #ff6933;
+                }
+            }
+
+            &.active {
+                .page-link {
+                    z-index: 3;
+                    color: #fff;
+                    background-color: $orange !important;
+                    border-color: $color !important;
+                }
+            }
+        }
+    }
+
+    .card {
+        background: $backgroundColor2;
+        border: 1px solid $borderColor2;
+    }
+
+    /*--------------------------------------------------------------
+    # Contact
+    --------------------------------------------------------------*/
+
+    .contact {
+        .info-box {
+            color: $color;
+            box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+        }
+
+        .php-email-form {
+            box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+        }
+    }
+
+    /*--------------------------------------------------------------
+    # Gäestebuch
+    --------------------------------------------------------------*/
+
+    .gaestebuch {
+        .gaestebuch-form {
+            box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+        }
+
+        .gb_shadow {
+            box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+        }
+
+        .gbook_content {
+            color: $color;
+
+            hr {
+                border-color: $borderColor;
+            }
+        }
+    }
+
+    /*.portfolio-images {
+        .thumb {
+            background-color: $backgroundColor;
+            box-shadow: 0px 0px 12px 0px rgba(214, 215, 216, 0.1);
+
+            .polaroid {
+                border-top: 1px solid #3a3f44;
+            }
+        }
+    }*/
+}

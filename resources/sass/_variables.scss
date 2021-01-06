@@ -1,0 +1,31 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #ff4400;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+.tox.tox-tinymce {
+    border-radius: 0.25rem;
+}
+
+#load {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    background: url("/images/spin.png") no-repeat center center rgba(0, 0, 0, 0.25);
+}
