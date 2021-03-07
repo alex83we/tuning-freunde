@@ -35,9 +35,9 @@
                     <li class="nav-item {{ Request::is('kontakt') ? 'active' : '' }}">
                         <a class="nav-link {{ Request::is('kontakt') ? 'active' : '' }}" href="{{ route('frontend.kontakt.index') }}">Kontakt</a>
                     </li>
-                    <li class="nav-item {{ Request::is('antrag') ? 'active' : '' }}">
+<!--                    <li class="nav-item {{ Request::is('antrag') ? 'active' : '' }}">
                         <a class="nav-link {{ Request::is('antrag') ? 'active' : '' }}" href="{{ route('frontend.antrag.index') }}">Antrag</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item {{ Request::is('gaestebuch') ? 'active' : '' }}">
                         <a class="nav-link {{ Request::is('gaestebuch') ? 'active' : '' }}" href="{{ route('frontend.gaestebuch.index') }}">Gästebuch</a>
                     </li>
