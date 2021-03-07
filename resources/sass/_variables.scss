@@ -29,3 +29,11 @@ $cyan: #6cb2eb;
     z-index: 9999;
     background: url("/images/spin.png") no-repeat center center rgba(0, 0, 0, 0.25);
 }
+
+.filter-gray {
+    filter: grayscale(1);
+
+    &:hover {
+        filter: none;
+    }
+}
