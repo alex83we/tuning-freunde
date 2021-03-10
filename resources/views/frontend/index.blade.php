@@ -24,18 +24,18 @@
 
                 <div class="carousel-inner" role="listbox">
 
-                    <!-- Slide Weihnachten -->
+                    {{--<!-- Slide Weihnachten -->
                     <div class="carousel-item active" style="background: url({{ asset('images/Weihnachten_TTF_Website.jpg') }}); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="carousel-container">
                             <div class="carousel-content">
-{{--                                <h2 class="animated fadeInDown">Willkommen bei den <span>Thüringer Tuning Freunden</span></h2>--}}
-{{--                                <p class="animated fadeInUp">Ein lustiges Team, das gerne schraubt, Grillt und sich mit anderen Clubs trifft.</p>--}}
+--}}{{--                                <h2 class="animated fadeInDown">Willkommen bei den <span>Thüringer Tuning Freunden</span></h2>--}}{{--
+--}}{{--                                <p class="animated fadeInUp">Ein lustiges Team, das gerne schraubt, Grillt und sich mit anderen Clubs trifft.</p>--}}{{--
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
 
                     <!-- Slide1 -->
-                    <div class="carousel-item" style="background: url({{ asset('images/WhatsApp_Image_2019-10-28_at_11.21.22.jpeg') }}); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="carousel-item active" style="background: url({{ asset('images/WhatsApp_Image_2019-10-28_at_11.21.22.jpeg') }}); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="carousel-container">
                             <div class="carousel-content">
                                 <h2 class="animated fadeInDown">Willkommen bei den <span>Thüringer Tuning Freunden</span></h2>
@@ -206,7 +206,7 @@
 @push('js')
     <script>
         $('#modal-christmas').modal({
-            show: true
+            show: false
         });
     </script>
 @endpush
